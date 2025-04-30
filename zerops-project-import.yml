@@ -1,0 +1,8 @@
+project:
+  name: Discordjs
+  tags:
+
+services:
+  - hostname: discordnode
+    type: nodejs@20
+    buildFromGit: https://github.com/suriboioioi/discordbot
