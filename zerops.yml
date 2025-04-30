@@ -1,0 +1,15 @@
+zerops:
+  - setup: discordnode
+    build:
+      base: nodejs@20
+      buildCommands:
+        - pnpm i
+        - pnpm run build
+      deployFiles:
+        - dist
+        - package.json
+        - node_modules
+    run:
+      base: nodejs@20
+      start: pnpm start
+  
